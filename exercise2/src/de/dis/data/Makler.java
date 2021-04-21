@@ -69,24 +69,24 @@ public class Makler {
 	 * @param id ID des zu ladenden Maklers
 	 * @return Makler-Instanz
 	 */
-	public static Makler load(int id) {
+	public static Makler load(String login) {
 		try {
 			// Hole Verbindung
 			Connection con = DbConnectionManager.getInstance().getConnection();
 
 			// Erzeuge Anfrage
-			String selectSQL = "SELECT * FROM makler WHERE id = ?";
+			String selectSQL = "SELECT * FROM estate_agent WHERE login = ?";
 			PreparedStatement pstmt = con.prepareStatement(selectSQL);
-			pstmt.setInt(1, id);
+			pstmt.setString(1, login);
 
 			// Führe Anfrage aus
 			ResultSet rs = pstmt.executeQuery();
 			if (rs.next()) {
 				Makler ts = new Makler();
-				ts.setId(id);
+				ts.setId(rs.getInt("agent_id"));
 				ts.setName(rs.getString("name"));
 				ts.setAddress(rs.getString("address"));
-				ts.setLogin(rs.getString("login"));
+				ts.setLogin(login);
 				ts.setPassword(rs.getString("password"));
 
 				rs.close();
@@ -112,7 +112,7 @@ public class Makler {
 			if (getId() == -1) {
 				// Achtung, hier wird noch ein Parameter mitgegeben,
 				// damit spC$ter generierte IDs zurC<ckgeliefert werden!
-				String insertSQL = "INSERT INTO makler(name, address, login, password) VALUES (?, ?, ?, ?)";
+				String insertSQL = "INSERT INTO estate_agent(name, address, login, password) VALUES (?, ?, ?, ?)";
 
 				PreparedStatement pstmt = con.prepareStatement(insertSQL,
 						Statement.RETURN_GENERATED_KEYS);
@@ -134,7 +134,7 @@ public class Makler {
 				pstmt.close();
 			} else {
 				// Falls schon eine ID vorhanden ist, mache ein Update...
-				String updateSQL = "UPDATE makler SET name = ?, address = ?, login = ?, password = ? WHERE id = ?";
+				String updateSQL = "UPDATE estate_agent SET name = ?, address = ?, login = ?, password = ? WHERE agent_id = ?";
 				PreparedStatement pstmt = con.prepareStatement(updateSQL);
 
 				// Setze Anfrage Parameter
@@ -150,5 +150,26 @@ public class Makler {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+	}
+
+	/*
+		Löscht einen existierenden Makler
+	*/
+	public void delete() {
+		// Hole Verbindung
+		Connection con = DbConnectionManager.getInstance().getConnection();
+
+		try {
+			String updateSQL = "DELETE FROM estate_agent WHERE agent_id = ?";
+			PreparedStatement pstmt = con.prepareStatement(updateSQL);
+
+			// Setze Anfrage Parameter
+			pstmt.setInt(1, getId());
+			pstmt.executeUpdate();
+
+			pstmt.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}		
 	}
 }
