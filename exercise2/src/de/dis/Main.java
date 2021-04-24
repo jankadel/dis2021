@@ -1,6 +1,9 @@
 package de.dis;
 
 import de.dis.data.Makler;
+import de.dis.data.Person;
+import de.dis.data.PurchaseContract;
+import de.dis.data.TenancyContract;
 import de.dis.data.Haus;
 import de.dis.data.Apartment;
 import java.io.BufferedReader;
@@ -420,11 +423,11 @@ public class Main {
 		final int SHOW_CONTRACTS = 2;
 		final int BACK = 3;
 		
-		//Maklerverwaltungsmenü
-		Menu estateMenu = new Menu("Immobilien-Verwaltung");
-		estateMenu.addEntry("Neue Immobilie", NEW_PERSON);
-		estateMenu.addEntry("Immobilie entfernen", SIGN_CONTRACT);
-		estateMenu.addEntry("Immobilie bearbeiten", SHOW_CONTRACTS);
+		//Verwaltungsmenü
+		Menu estateMenu = new Menu("Vertragsverwaltung");
+		estateMenu.addEntry("Neue Person anlegen", NEW_PERSON);
+		estateMenu.addEntry("Vertrag erstellen", SIGN_CONTRACT);
+		estateMenu.addEntry("Verträge anzeigen", SHOW_CONTRACTS);
 		estateMenu.addEntry("Zurück zum Hauptmenü", BACK);
 		
 		//Verarbeite Eingabe
@@ -433,17 +436,82 @@ public class Main {
 			
 			switch(response) {
 				case NEW_PERSON:
-					//newPerson();
+					newPerson();
 					break;
 				case SIGN_CONTRACT:
-					//signContract();
+					signContract();
 					break;
 				case SHOW_CONTRACTS:
-					//showContracts();
+					showContracts();
 					break;
 				case BACK:
 					return;
 			}
 		}
+	}
+
+	/**
+	 * 
+	 */
+	public static void newPerson() {
+		Person p = new Person();
+		
+		p.setFirstName(FormUtil.readString("Vorname"));
+		p.setLastName(FormUtil.readString("Nachname"));
+		p.setAddress(FormUtil.readString("Adresse"));
+		
+		p.save();
+		
+		System.out.println("Person "+p.getFirstName()+" "+p.getLastName()+" mit der ID "+p.getId()+" wurde angelegt.");
+	}
+
+	public static void signContract() {
+		System.out.println("Bitte Vertragsart angeben (Mietvertrag, Kaufvertrag)");
+		String cType = FormUtil.readString("Vertragsart");
+
+		if (cType.equals("Mietvertrag")) {
+			TenancyContract c = new TenancyContract();
+			int estate_id = FormUtil.readInt("Apartment ID");
+			c.setEid(estate_id);
+			int person_id = FormUtil.readInt("Person ID des mietenden Individuums");
+			c.setPid(person_id);
+			String cDate = FormUtil.readString("Bitte Vertragsdatum angeben (yyyy-[m]m-[d]d)");
+			c.setDate(java.sql.Date.valueOf(cDate));
+			String place = FormUtil.readString("Bitte Ort eingeben");
+			c.setPlace(place);
+			String startDate = FormUtil.readString("Bitte Startdatum des Mietvertrags angeben (yyyy-[m]m-[d]d)");
+			c.setStartDate(java.sql.Date.valueOf(startDate));
+			int duration = FormUtil.readInt("Bitte Vertragsdauer in Monaten eingeben");
+			c.setDuration(duration);
+			int additional_cost = FormUtil.readInt("Bitte Nebenkosten eingeben");
+			c.setAdditionalCost(additional_cost);
+
+			c.save();
+			System.out.println("Mietvertrag "+c.getId()+" von Person "+c.getId()+" und Apartment "+c.getEid()+" angelegt.");
+		} else if (cType.equals("Kaufvertrag")) {
+			PurchaseContract c = new PurchaseContract();
+			int estate_id = FormUtil.readInt("Haus ID");
+			c.setEid(estate_id);
+			int person_id = FormUtil.readInt("Person ID des kaufenden Individuums");
+			c.setPid(person_id);
+			String cDate = FormUtil.readString("Bitte Vertragsdatum angeben (yyyy-[m]m-[d]d)");
+			c.setDate(java.sql.Date.valueOf(cDate));
+			String place = FormUtil.readString("Bitte Ort eingeben");
+			c.setPlace(place);
+			int installments = FormUtil.readInt("Anzahl der Raten angeben");
+			c.setInstallments(installments);
+			int interest_rate = FormUtil.readInt("Ganzzahligen Zinssatz angeben");
+			c.setInterest(interest_rate);
+
+			c.save();
+			System.out.println("Kaufvertrag "+c.getId()+" von Person "+c.getId()+" und Haus "+c.getEid()+" angelegt.");
+		} else {
+			System.out.println("Falsche Vertragsart! Typ "+cType+" existiert nicht.");
+		}
+	}
+
+	public static void showContracts() {
+		PurchaseContract.printContracts();
+		TenancyContract.printContracts();
 	}
 }
