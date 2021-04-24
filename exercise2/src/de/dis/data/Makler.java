@@ -66,7 +66,7 @@ public class Makler {
 	
 	/**
 	 * Lädt einen Makler aus der Datenbank
-	 * @param id ID des zu ladenden Maklers
+	 * @param login Login Name des zu ladenden Maklers
 	 * @return Makler-Instanz
 	 */
 	public static Makler load(String login) {
