@@ -65,6 +65,10 @@ public class Main {
 					try {
 						String login = stdin.readLine();
 						Makler m = Makler.load(login);
+						if (m == null) {
+							System.out.println("Datensatz nicht gefunden! "+login+" existiert nicht!");
+							break;
+						}
 						System.out.println("Datensatz gefunden! Bitte Passwort für " + login + " eingeben:");
 						String password = m.getPassword();
 						String input = stdin.readLine();
@@ -147,27 +151,32 @@ public class Main {
 		System.out.println("Bitte Makler-Login des zu ändernden Maklers eingeben:");
 		String login = FormUtil.readString("Login");
 		Makler m = Makler.load(login);
-		System.out.println("Datensatz für Makler: "+m.getLogin()+" mit ID: "+m.getId()+" gefunden!\n");
-		System.out.println("Welches Attribut soll geändert werden? Mögliche: Name, Adresse, Login, Passwort\n");
-		String input = FormUtil.readString("Attribut");
-
-		if (input.equals("Name")) {
-			String newName = FormUtil.readString("Neuer Name");
-			m.setName(newName);
-		} else if(input.equals("Adresse")) {
-			String newAddr = FormUtil.readString("Neue Adresse");
-			m.setAddress(newAddr);
-		} else if(input.equals("Login")) {
-			String newLogin = FormUtil.readString("Neuer Login");
-			m.setLogin(newLogin);
-		} else if(input.equals("Passwort")) {
-			String newPass = FormUtil.readString("Neues Passwort");
-			m.setPassword(newPass);
+		if (m == null) {
+			System.out.println("Datensatz nicht gefunden! "+login+" existiert nicht!");
+		
 		} else {
-			System.out.println("Fehler! Das Attribut "+input+" existiert nicht.\n Kehre zum Makler-Menü zurück...");
+			System.out.println("Datensatz für Makler: "+m.getLogin()+" mit ID: "+m.getId()+" gefunden!\n");
+			System.out.println("Welches Attribut soll geändert werden? Mögliche: Name, Adresse, Login, Passwort\n");
+			String input = FormUtil.readString("Attribut");
+
+			if (input.equals("Name")) {
+				String newName = FormUtil.readString("Neuer Name");
+				m.setName(newName);
+			} else if(input.equals("Adresse")) {
+				String newAddr = FormUtil.readString("Neue Adresse");
+				m.setAddress(newAddr);
+			} else if(input.equals("Login")) {
+				String newLogin = FormUtil.readString("Neuer Login");
+				m.setLogin(newLogin);
+			} else if(input.equals("Passwort")) {
+				String newPass = FormUtil.readString("Neues Passwort");
+				m.setPassword(newPass);
+			} else {
+				System.out.println("Fehler! Das Attribut "+input+" existiert nicht.\n Kehre zum Makler-Menü zurück...");
+			}
+			m.save();
+			System.out.println("Erfolg! Das Attribut "+input+" von "+m.getLogin()+" wurde aktualisiert.\n Kehre zum Makler-Menü zurück...");
 		}
-		m.save();
-		System.out.println("Erfolg! Das Attribut "+input+" von "+m.getLogin()+" wurde aktualisiert.\n Kehre zum Makler-Menü zurück...");
 	}
 
 	public static void deleteMakler() {
@@ -487,7 +496,7 @@ public class Main {
 			c.setAdditionalCost(additional_cost);
 
 			c.save();
-			System.out.println("Mietvertrag "+c.getId()+" von Person "+c.getId()+" und Apartment "+c.getEid()+" angelegt.");
+			System.out.println("Mietvertrag "+c.getId()+" von Person "+c.getPid()+" und Apartment "+c.getEid()+" angelegt.");
 		} else if (cType.equals("Kaufvertrag")) {
 			PurchaseContract c = new PurchaseContract();
 			int estate_id = FormUtil.readInt("Haus ID");
@@ -504,7 +513,7 @@ public class Main {
 			c.setInterest(interest_rate);
 
 			c.save();
-			System.out.println("Kaufvertrag "+c.getId()+" von Person "+c.getId()+" und Haus "+c.getEid()+" angelegt.");
+			System.out.println("Kaufvertrag "+c.getId()+" von Person "+c.getPid()+" und Haus "+c.getEid()+" angelegt.");
 		} else {
 			System.out.println("Falsche Vertragsart! Typ "+cType+" existiert nicht.");
 		}
