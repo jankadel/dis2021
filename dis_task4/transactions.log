@@ -1,0 +1,390 @@
+Mai 18, 2021 10:14:06 AM de.dis.Main setupLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 18, 2021 10:14:06 AM de.dis.Main main
+INFORMATION: Another entry
+Mai 18, 2021 10:18:13 AM de.dis.Main setupLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 18, 2021 10:18:13 AM de.dis.Main main
+INFORMATION: Another entry
+Mai 21, 2021 12:37:03 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:11:01 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:11:01 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:00c8a976-384b-4c95-8dcd-48d04a1fe440
+Mai 21, 2021 1:11:49 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:11:49 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:834e5a04-16e8-47e2-842e-80c4ec5fc81a
+Mai 21, 2021 1:11:49 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:834e5a04-16e8-47e2-842e-80c4ec5fc81a|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:11:49 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:834e5a04-16e8-47e2-842e-80c4ec5fc81a
+Mai 21, 2021 1:11:49 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:ba4f710e-b74d-4445-8e7b-16ca4fcbf45c
+Mai 21, 2021 1:11:49 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:ba4f710e-b74d-4445-8e7b-16ca4fcbf45c|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:11:49 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:ba4f710e-b74d-4445-8e7b-16ca4fcbf45c|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:13:09 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:13:09 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:416ac0ac-3950-4f8f-a51d-72268c67b7ec
+Mai 21, 2021 1:13:09 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:416ac0ac-3950-4f8f-a51d-72268c67b7ec|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:13:09 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:416ac0ac-3950-4f8f-a51d-72268c67b7ec
+Mai 21, 2021 1:13:09 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:edbdb74c-e3b9-44f1-8ab1-56a2c8346f5c
+Mai 21, 2021 1:13:09 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:edbdb74c-e3b9-44f1-8ab1-56a2c8346f5c|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:13:09 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:edbdb74c-e3b9-44f1-8ab1-56a2c8346f5c|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:13:09 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:6|TAID:edbdb74c-e3b9-44f1-8ab1-56a2c8346f5c|PAGEID:2|DATA:schwurbler3
+Mai 21, 2021 1:13:47 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:13:47 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:255ad16d-6a87-4c6f-800c-c12f543a1324
+Mai 21, 2021 1:13:47 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:255ad16d-6a87-4c6f-800c-c12f543a1324|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:13:47 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:255ad16d-6a87-4c6f-800c-c12f543a1324
+Mai 21, 2021 1:13:47 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:5a49a042-df39-45d3-ace8-37c42bdd07e5
+Mai 21, 2021 1:13:47 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:5a49a042-df39-45d3-ace8-37c42bdd07e5|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:13:47 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:5a49a042-df39-45d3-ace8-37c42bdd07e5|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:13:47 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:6|TAID:5a49a042-df39-45d3-ace8-37c42bdd07e5|PAGEID:2|DATA:schwurbler3
+Mai 21, 2021 1:14:49 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:14:49 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:3794cdac-c144-460c-bbfd-e7692717ded4
+Mai 21, 2021 1:14:49 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:3794cdac-c144-460c-bbfd-e7692717ded4|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:14:49 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:3794cdac-c144-460c-bbfd-e7692717ded4
+Mai 21, 2021 1:14:49 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:16c34d2d-b5b9-475b-90c5-14fae9a916f6
+Mai 21, 2021 1:14:49 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:16c34d2d-b5b9-475b-90c5-14fae9a916f6|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:14:49 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:16c34d2d-b5b9-475b-90c5-14fae9a916f6|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:14:49 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:6|TAID:16c34d2d-b5b9-475b-90c5-14fae9a916f6|PAGEID:2|DATA:schwurbler3
+Mai 21, 2021 1:15:44 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:15:44 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:d8117e04-8061-4898-b42d-cfe69201851e
+Mai 21, 2021 1:15:44 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:d8117e04-8061-4898-b42d-cfe69201851e|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:15:44 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:d8117e04-8061-4898-b42d-cfe69201851e
+Mai 21, 2021 1:15:44 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:d9dade52-25c4-4248-833f-e45229b38c19
+Mai 21, 2021 1:15:44 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:d9dade52-25c4-4248-833f-e45229b38c19|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:15:44 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:d9dade52-25c4-4248-833f-e45229b38c19|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:15:44 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:6|TAID:d9dade52-25c4-4248-833f-e45229b38c19|PAGEID:2|DATA:schwurbler3
+Mai 21, 2021 1:16:53 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:16:53 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:ec0d0f6f-2dfe-4eae-8c7d-57023f354f5b
+Mai 21, 2021 1:16:53 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:ec0d0f6f-2dfe-4eae-8c7d-57023f354f5b|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:16:54 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:ec0d0f6f-2dfe-4eae-8c7d-57023f354f5b
+Mai 21, 2021 1:16:54 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:f26f9227-f76b-48c1-a058-276f6394939d
+Mai 21, 2021 1:16:54 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:f26f9227-f76b-48c1-a058-276f6394939d|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:16:54 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:f26f9227-f76b-48c1-a058-276f6394939d|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:16:54 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:6|TAID:f26f9227-f76b-48c1-a058-276f6394939d|PAGEID:2|DATA:schwurbler3
+Mai 21, 2021 1:17:49 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:17:49 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:c96cb431-a653-46ca-8ae1-ba583274a46a
+Mai 21, 2021 1:17:49 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:c96cb431-a653-46ca-8ae1-ba583274a46a|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:17:49 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:c96cb431-a653-46ca-8ae1-ba583274a46a
+Mai 21, 2021 1:17:49 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:8ec840a3-8d7b-4164-9b74-86590164c421
+Mai 21, 2021 1:17:49 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:8ec840a3-8d7b-4164-9b74-86590164c421|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:17:49 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:8ec840a3-8d7b-4164-9b74-86590164c421|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:17:49 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:6|TAID:8ec840a3-8d7b-4164-9b74-86590164c421|PAGEID:2|DATA:schwurbler3
+Mai 21, 2021 1:18:04 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:18:04 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:f7b0f8a6-65ed-4615-984c-c7ea16ea50d1
+Mai 21, 2021 1:18:04 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:f7b0f8a6-65ed-4615-984c-c7ea16ea50d1|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:18:04 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:f7b0f8a6-65ed-4615-984c-c7ea16ea50d1
+Mai 21, 2021 1:18:04 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:582383bd-a4fd-4f1f-838f-2e95dd2ab6f5
+Mai 21, 2021 1:18:04 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:582383bd-a4fd-4f1f-838f-2e95dd2ab6f5|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:18:04 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:582383bd-a4fd-4f1f-838f-2e95dd2ab6f5|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:18:04 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:6|TAID:582383bd-a4fd-4f1f-838f-2e95dd2ab6f5|PAGEID:2|DATA:schwurbler3
+Mai 21, 2021 1:18:46 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:18:46 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:5da62b71-c180-4214-bb5c-075eaaf83293
+Mai 21, 2021 1:18:46 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:5da62b71-c180-4214-bb5c-075eaaf83293|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:18:46 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:5da62b71-c180-4214-bb5c-075eaaf83293
+Mai 21, 2021 1:18:46 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:cb9253ea-4f1b-430d-9114-0e543f8d59c1
+Mai 21, 2021 1:18:46 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:cb9253ea-4f1b-430d-9114-0e543f8d59c1|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:18:46 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:cb9253ea-4f1b-430d-9114-0e543f8d59c1|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:18:46 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:6|TAID:cb9253ea-4f1b-430d-9114-0e543f8d59c1|PAGEID:2|DATA:schwurbler3
+Mai 21, 2021 1:19:24 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:19:24 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:632e4d0c-6a7d-434f-a5f0-3258ae2f30eb
+Mai 21, 2021 1:19:24 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:632e4d0c-6a7d-434f-a5f0-3258ae2f30eb|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:19:24 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:632e4d0c-6a7d-434f-a5f0-3258ae2f30eb
+Mai 21, 2021 1:19:24 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:aa48e100-219d-4741-8252-887b930ab9b3
+Mai 21, 2021 1:19:24 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:aa48e100-219d-4741-8252-887b930ab9b3|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:19:24 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:aa48e100-219d-4741-8252-887b930ab9b3|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:19:24 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:6|TAID:aa48e100-219d-4741-8252-887b930ab9b3|PAGEID:2|DATA:schwurbler3
+Mai 21, 2021 1:20:28 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:20:28 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:8334d055-86a2-4f1a-8bef-97a158d8e9ce
+Mai 21, 2021 1:20:28 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:8334d055-86a2-4f1a-8bef-97a158d8e9ce|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:20:28 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:8334d055-86a2-4f1a-8bef-97a158d8e9ce
+Mai 21, 2021 1:20:28 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:fd8dc323-2894-4fe7-9f01-87578741763a
+Mai 21, 2021 1:20:28 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:fd8dc323-2894-4fe7-9f01-87578741763a|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:20:28 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:fd8dc323-2894-4fe7-9f01-87578741763a|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:20:28 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:6|TAID:fd8dc323-2894-4fe7-9f01-87578741763a|PAGEID:2|DATA:schwurbler3
+Mai 21, 2021 1:23:19 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:23:19 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT-LSN:0-TAID:8343893d-dcd8-4819-a7da-1e811718077a
+Mai 21, 2021 1:23:19 PM de.dis.PersistenceManager write
+INFORMATION: WRITE-LSN:1-TAID:8343893d-dcd8-4819-a7da-1e811718077a-PAGEID:1-DATA:Hallooo
+Mai 21, 2021 1:23:19 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT-LSN:2-TAID:8343893d-dcd8-4819-a7da-1e811718077a
+Mai 21, 2021 1:23:19 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT-LSN:3-TAID:1560ee21-e7e6-4e4b-ba29-b92aab55ba45
+Mai 21, 2021 1:23:19 PM de.dis.PersistenceManager write
+INFORMATION: WRITE-LSN:4-TAID:1560ee21-e7e6-4e4b-ba29-b92aab55ba45-PAGEID:2-DATA:schwurbler1
+Mai 21, 2021 1:23:19 PM de.dis.PersistenceManager write
+INFORMATION: WRITE-LSN:5-TAID:1560ee21-e7e6-4e4b-ba29-b92aab55ba45-PAGEID:2-DATA:schwurbler2
+Mai 21, 2021 1:24:20 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:24:20 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT-LSN:0-TAID:88242abb-092e-4ba5-82ff-5283bfc8b7f1
+Mai 21, 2021 1:24:20 PM de.dis.PersistenceManager write
+INFORMATION: WRITE-LSN:1-TAID:88242abb-092e-4ba5-82ff-5283bfc8b7f1-PAGEID:1-DATA:Hallooo
+Mai 21, 2021 1:24:20 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT-LSN:2-TAID:88242abb-092e-4ba5-82ff-5283bfc8b7f1
+Mai 21, 2021 1:24:20 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT-LSN:3-TAID:a9802e46-1bc5-49e9-8a09-5d6657a5c389
+Mai 21, 2021 1:24:20 PM de.dis.PersistenceManager write
+INFORMATION: WRITE-LSN:4-TAID:a9802e46-1bc5-49e9-8a09-5d6657a5c389-PAGEID:2-DATA:schwurbler1
+Mai 21, 2021 1:24:20 PM de.dis.PersistenceManager write
+INFORMATION: WRITE-LSN:5-TAID:a9802e46-1bc5-49e9-8a09-5d6657a5c389-PAGEID:2-DATA:schwurbler2
+Mai 21, 2021 1:25:20 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:25:20 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT-LSN:0-TAID:d9e9bb73-ab49-4ec1-acca-a82dc3e0356b
+Mai 21, 2021 1:25:20 PM de.dis.PersistenceManager write
+INFORMATION: WRITE-LSN:1-TAID:d9e9bb73-ab49-4ec1-acca-a82dc3e0356b-PAGEID:1-DATA:Hallooo
+Mai 21, 2021 1:25:20 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT-LSN:2-TAID:d9e9bb73-ab49-4ec1-acca-a82dc3e0356b
+Mai 21, 2021 1:25:20 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT-LSN:3-TAID:af51ddea-0f95-49bd-90e5-3dabe1416e3b
+Mai 21, 2021 1:25:20 PM de.dis.PersistenceManager write
+INFORMATION: WRITE-LSN:4-TAID:af51ddea-0f95-49bd-90e5-3dabe1416e3b-PAGEID:2-DATA:schwurbler1
+Mai 21, 2021 1:25:20 PM de.dis.PersistenceManager write
+INFORMATION: WRITE-LSN:5-TAID:af51ddea-0f95-49bd-90e5-3dabe1416e3b-PAGEID:2-DATA:schwurbler2
+Mai 21, 2021 1:25:20 PM de.dis.PersistenceManager write
+INFORMATION: WRITE-LSN:6-TAID:af51ddea-0f95-49bd-90e5-3dabe1416e3b-PAGEID:2-DATA:schwurbler3
+Mai 21, 2021 1:28:02 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:28:02 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT-LSN:0-TAID:8ec606b4-4214-44d2-bcc9-520047421496
+Mai 21, 2021 1:28:02 PM de.dis.PersistenceManager write
+INFORMATION: WRITE-LSN:1-TAID:8ec606b4-4214-44d2-bcc9-520047421496-PAGEID:1-DATA:Hallooo
+Mai 21, 2021 1:28:02 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT-LSN:2-TAID:8ec606b4-4214-44d2-bcc9-520047421496
+Mai 21, 2021 1:28:02 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT-LSN:3-TAID:daa4e099-8577-43c4-b5b2-b8bd15e5af68
+Mai 21, 2021 1:28:02 PM de.dis.PersistenceManager write
+INFORMATION: WRITE-LSN:4-TAID:daa4e099-8577-43c4-b5b2-b8bd15e5af68-PAGEID:2-DATA:schwurbler1
+Mai 21, 2021 1:28:02 PM de.dis.PersistenceManager write
+INFORMATION: WRITE-LSN:5-TAID:daa4e099-8577-43c4-b5b2-b8bd15e5af68-PAGEID:2-DATA:schwurbler2
+Mai 21, 2021 1:28:02 PM de.dis.PersistenceManager write
+INFORMATION: WRITE-LSN:6-TAID:daa4e099-8577-43c4-b5b2-b8bd15e5af68-PAGEID:2-DATA:schwurbler3
+Mai 21, 2021 1:29:14 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:29:15 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT-LSN:0-TAID:ed16cb22-d712-49eb-b034-0b4581b6b892
+Mai 21, 2021 1:29:15 PM de.dis.PersistenceManager write
+INFORMATION: WRITE-LSN:1-TAID:ed16cb22-d712-49eb-b034-0b4581b6b892-PAGEID:1-DATA:Hallooo
+Mai 21, 2021 1:29:15 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT-LSN:2-TAID:ed16cb22-d712-49eb-b034-0b4581b6b892
+Mai 21, 2021 1:29:15 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT-LSN:3-TAID:5d218ea6-9049-4f73-8ec3-f083063ed2ec
+Mai 21, 2021 1:29:15 PM de.dis.PersistenceManager write
+INFORMATION: WRITE-LSN:4-TAID:5d218ea6-9049-4f73-8ec3-f083063ed2ec-PAGEID:2-DATA:schwurbler1
+Mai 21, 2021 1:29:15 PM de.dis.PersistenceManager write
+INFORMATION: WRITE-LSN:5-TAID:5d218ea6-9049-4f73-8ec3-f083063ed2ec-PAGEID:2-DATA:schwurbler2
+Mai 21, 2021 1:29:15 PM de.dis.PersistenceManager write
+INFORMATION: WRITE-LSN:6-TAID:5d218ea6-9049-4f73-8ec3-f083063ed2ec-PAGEID:2-DATA:schwurbler3
+Mai 21, 2021 1:32:47 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:32:47 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:fce39d5c-7cd8-43f5-a83b-ea20521868e5
+Mai 21, 2021 1:32:47 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:fce39d5c-7cd8-43f5-a83b-ea20521868e5|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:32:47 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:fce39d5c-7cd8-43f5-a83b-ea20521868e5
+Mai 21, 2021 1:32:47 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:b0b9af2b-18e9-4409-acfb-c7a5615686f1
+Mai 21, 2021 1:32:47 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:b0b9af2b-18e9-4409-acfb-c7a5615686f1|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:32:47 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:b0b9af2b-18e9-4409-acfb-c7a5615686f1|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:33:40 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:33:40 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:7427630a-866e-4fab-85f3-9886e57f0eb1
+Mai 21, 2021 1:33:40 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:7427630a-866e-4fab-85f3-9886e57f0eb1|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:33:40 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:7427630a-866e-4fab-85f3-9886e57f0eb1
+Mai 21, 2021 1:33:40 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:d199db81-6c02-4f73-8dc7-ab8ce7e846eb
+Mai 21, 2021 1:33:40 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:d199db81-6c02-4f73-8dc7-ab8ce7e846eb|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:33:40 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:d199db81-6c02-4f73-8dc7-ab8ce7e846eb|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:33:40 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:6|TAID:d199db81-6c02-4f73-8dc7-ab8ce7e846eb|PAGEID:2|DATA:schwurbler3
+Mai 21, 2021 1:34:14 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:34:14 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:13b7fdfa-faaa-40e7-aec5-6bbadca684a9
+Mai 21, 2021 1:34:14 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:13b7fdfa-faaa-40e7-aec5-6bbadca684a9|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:34:14 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:13b7fdfa-faaa-40e7-aec5-6bbadca684a9
+Mai 21, 2021 1:34:14 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:fb055443-77c0-465d-984d-c59a014b9e95
+Mai 21, 2021 1:34:14 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:fb055443-77c0-465d-984d-c59a014b9e95|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:34:14 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:fb055443-77c0-465d-984d-c59a014b9e95|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:34:14 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:6|TAID:fb055443-77c0-465d-984d-c59a014b9e95|PAGEID:2|DATA:schwurbler3
+Mai 21, 2021 1:34:26 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:34:27 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:59d2ac0e-559e-4216-8d8d-b7395cb25dc6
+Mai 21, 2021 1:34:27 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:59d2ac0e-559e-4216-8d8d-b7395cb25dc6|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:34:27 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:59d2ac0e-559e-4216-8d8d-b7395cb25dc6
+Mai 21, 2021 1:34:27 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:3cf53297-c8dd-41cb-b2f1-7a926aa1e6f9
+Mai 21, 2021 1:34:27 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:3cf53297-c8dd-41cb-b2f1-7a926aa1e6f9|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:34:27 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:3cf53297-c8dd-41cb-b2f1-7a926aa1e6f9|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:34:27 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:6|TAID:3cf53297-c8dd-41cb-b2f1-7a926aa1e6f9|PAGEID:2|DATA:schwurbler3
+Mai 21, 2021 1:34:45 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:34:45 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:4412d353-e7c1-456f-a5f2-be9cd45a14e0
+Mai 21, 2021 1:34:45 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:4412d353-e7c1-456f-a5f2-be9cd45a14e0|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:34:45 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:4412d353-e7c1-456f-a5f2-be9cd45a14e0
+Mai 21, 2021 1:34:45 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:38df0c31-f558-400a-bfeb-f4afdff70895
+Mai 21, 2021 1:34:45 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:38df0c31-f558-400a-bfeb-f4afdff70895|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:34:45 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:38df0c31-f558-400a-bfeb-f4afdff70895|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:34:45 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:6|TAID:38df0c31-f558-400a-bfeb-f4afdff70895|PAGEID:2|DATA:schwurbler3
+Mai 21, 2021 1:35:42 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:35:42 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:37a50fa0-a5ec-4d81-8c5f-0f79e57bf2b7
+Mai 21, 2021 1:35:42 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:37a50fa0-a5ec-4d81-8c5f-0f79e57bf2b7|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:35:42 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:37a50fa0-a5ec-4d81-8c5f-0f79e57bf2b7
+Mai 21, 2021 1:35:42 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:5604c320-604a-4c21-9c85-7d118a3b37cd
+Mai 21, 2021 1:35:42 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:5604c320-604a-4c21-9c85-7d118a3b37cd|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:35:42 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:5604c320-604a-4c21-9c85-7d118a3b37cd|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:35:42 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:6|TAID:5604c320-604a-4c21-9c85-7d118a3b37cd|PAGEID:2|DATA:schwurbler3
+Mai 21, 2021 1:36:07 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:36:07 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:e3e9d4aa-3362-4f2d-9317-f9268534f14e
+Mai 21, 2021 1:36:07 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:e3e9d4aa-3362-4f2d-9317-f9268534f14e|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:36:07 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:e3e9d4aa-3362-4f2d-9317-f9268534f14e
+Mai 21, 2021 1:36:07 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:48410695-53dd-43cb-b944-3740158329d3
+Mai 21, 2021 1:36:07 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:48410695-53dd-43cb-b944-3740158329d3|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:36:07 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:48410695-53dd-43cb-b944-3740158329d3|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:36:07 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:6|TAID:48410695-53dd-43cb-b944-3740158329d3|PAGEID:2|DATA:schwurbler3
+Mai 21, 2021 1:39:11 PM de.dis.Main getLogger
+INFORMATION: --- LOG INITIALIZED ---
+Mai 21, 2021 1:39:11 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:0|TAID:3f55ac33-de4c-4ba8-bb2d-8769cf4280f8
+Mai 21, 2021 1:39:11 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:1|TAID:3f55ac33-de4c-4ba8-bb2d-8769cf4280f8|PAGEID:1|DATA:Hallooo
+Mai 21, 2021 1:39:11 PM de.dis.PersistenceManager commit
+INFORMATION: COMMIT|LSN:2|TAID:3f55ac33-de4c-4ba8-bb2d-8769cf4280f8
+Mai 21, 2021 1:39:11 PM de.dis.PersistenceManager beginTransaction
+INFORMATION: BOT|LSN:3|TAID:fe2f548d-ccf9-4216-aeeb-5500abdebbad
+Mai 21, 2021 1:39:11 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:4|TAID:fe2f548d-ccf9-4216-aeeb-5500abdebbad|PAGEID:2|DATA:schwurbler1
+Mai 21, 2021 1:39:11 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:5|TAID:fe2f548d-ccf9-4216-aeeb-5500abdebbad|PAGEID:2|DATA:schwurbler2
+Mai 21, 2021 1:39:11 PM de.dis.PersistenceManager write
+INFORMATION: WRITE|LSN:6|TAID:fe2f548d-ccf9-4216-aeeb-5500abdebbad|PAGEID:2|DATA:schwurbler3
