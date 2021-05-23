@@ -88,7 +88,7 @@ class PersistenceManager {
 
     private void writeBuffer(HashMap<Integer, String> Buffer, int LSN, String LogEntry) {
         Buffer.put(LSN, LogEntry);
-        if (Buffer.size() > 5) {
+        if (Buffer.size() > bufferThreshold) {
             persistenceCheck(Buffer);
         }
     }
@@ -104,7 +104,6 @@ class PersistenceManager {
         for (Integer k : keys) {
             String entry = Buffer.get(k);
             String segments[] = entry.split("\\|");
-
             if (segments[0].equals("COMMIT")) {
                 commits.add(segments[2]);
             }        
@@ -145,6 +144,9 @@ class PersistenceManager {
         }
     }
 
+    /*
+        Recovery only for uncommited transactions!
+    */
     public void recoveryCheck() {
         String path = "transactions.log";
         ArrayList<String> logs = new ArrayList<String>();
@@ -197,7 +199,36 @@ class PersistenceManager {
                 writeBuffer(buffer, LSN, u);
             }
         }
+    }
 
+    /*
+        Recovery for all operations
+    */
+    public void fullRecovery() {
+        String path = "transactions.log";
+        ArrayList<String> logs = new ArrayList<String>();
+        
+        //Read Logfile and store correctly formatted entries.
+        try {
+            File logfile = new File(path);
+            BufferedReader reader = new BufferedReader(new FileReader(logfile));
+            String line = reader.readLine();
+            while(line != null) {
+                if(line.contains("INFORMATION:")) {
+                    String log = line.split("NFORMATION:")[1];
+                    logs.add(log);
+                }
+                line = reader.readLine();
+            }
+
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        for (String l : logs) {
+            String[] segments = l.split("\\|");
+            writeBuffer(buffer, Integer.parseInt(segments[1].split(":")[1]), l.replaceAll(" ", ""));
+        }
     }
 
     static public PersistenceManager getInstance(){

@@ -18,6 +18,11 @@ public class Client extends Thread {
         for (String c : content) {
             determinePageID(lowerPage, upperPage, this.currentPage);
             pm.write(TAID, this.currentPage, c);
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
         pm.commit(TAID);
     }
@@ -27,6 +32,11 @@ public class Client extends Thread {
         for (String c : content) {
             determinePageID(lowerPage, upperPage, this.currentPage);
             pm.write(TAID, this.currentPage, c);
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
         return TAID;
     }
@@ -35,6 +45,11 @@ public class Client extends Thread {
         for (String c : content) {
             determinePageID(lowerPage, upperPage, this.currentPage);
             pm.write(TAID, this.currentPage, c);
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
         if (commitFlag == true) {
             pm.commit(TAID);
