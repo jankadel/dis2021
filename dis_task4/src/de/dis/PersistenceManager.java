@@ -1,7 +1,9 @@
 package de.dis;
 
 import java.util.UUID;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -25,19 +27,26 @@ class PersistenceManager {
     private SynchronizedCounter counter = new SynchronizedCounter();
 
     private int bufferThreshold = 5;
-    // HashMap<TAID, PAGEID, DATA, LOGENTRY>
-    public HashMap<Integer, String> buffer = new HashMap<Integer, String>();
+    // HashMap<Integer LSN, String LOG-Entry>
+    private HashMap<Integer, String> buffer = new HashMap<Integer, String>();
 
     private PersistenceManager() {}
 
     public void setThreshold(int newThreshold) {
-        bufferThreshold = newThreshold;
+        this.bufferThreshold = newThreshold;
     }
 
     public int getThreshold() {
         return bufferThreshold;
     }
 
+    public int getBufferSize() {
+        return buffer.size();
+    }
+
+    public int getCounterFromPrevTA() {
+        return counter.val();
+    }
     /*
         starts a new transaction. The persistence manager creates a unique transaction
         ID and returns it to the client.
@@ -134,6 +143,61 @@ class PersistenceManager {
             }
             Buffer.remove(LSN);
         }
+    }
+
+    public void recoveryCheck() {
+        String path = "transactions.log";
+        ArrayList<String> logs = new ArrayList<String>();
+        ArrayList<String> commits = new ArrayList<String>();
+        ArrayList<String> uncommitted = new ArrayList<String>();
+        //Read Logfile and store correctly formatted entries.
+        try {
+            File logfile = new File(path);
+            BufferedReader reader = new BufferedReader(new FileReader(logfile));
+            String line = reader.readLine();
+            while(line != null) {
+                if(line.contains("INFORMATION:")) {
+                    String log = line.split("NFORMATION:")[1];
+                    logs.add(log);
+                }
+                line = reader.readLine();
+            }
+
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        //Yield commits
+        for (String l : logs) {
+            String segments[] = l.split("\\|");
+            if (segments[0].contains("COMMIT")) {
+                commits.add(segments[2]);
+            }
+        }
+        //Yield uncommitted transactions by TAID
+        String cs[] = new String[commits.size()];
+        for (int i = 0; i < commits.size(); i++) {
+            cs[i] = commits.get(i);
+        }
+
+        for (String l : logs) {
+            if(!Arrays.stream(cs).anyMatch(l::contains)) {
+                if(!uncommitted.contains(l)) {
+                    uncommitted.add(l);
+                }
+            }
+        }
+        //Redo write operations
+        for (String u : uncommitted) {
+            String segments[] = u.split("\\|");
+            if (segments[0].contains("WRITE")) {
+                Integer LSN = Integer.parseInt(segments[1].split(":")[1]);
+                counter.setCounter(LSN);
+                writeBuffer(buffer, LSN, u);
+            }
+        }
+
     }
 
     static public PersistenceManager getInstance(){

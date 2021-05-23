@@ -10,16 +10,21 @@ public class Main {
 
     public static void main(String[] args) {
         PersistenceManager pm = PersistenceManager.getInstance();
-        // Debug to check for task 1.
-        int page = 1;
-        String data = "Hallooo";
-        String taid = pm.beginTransaction();
-        pm.write(taid, page, data);
-        pm.commit(taid);
-        String taid2 = pm.beginTransaction();
-        pm.write(taid2, 2, "schwurbler1");
-        pm.write(taid2, 2, "schwurbler2");
-        pm.write(taid2, 2, "schwurbler3");
+        pm.recoveryCheck();
+        System.out.println(Integer.toString(pm.getCounterFromPrevTA()));
+        System.out.println(Integer.toString(pm.getBufferSize()));
+        /*
+        Client c1 = new Client(pm, 0, 9);
+        Client c2 = new Client(pm, 10, 19);
+        String[] content = {"String1", "String2", "String3", "String4"};
+        String[] content2 = {"String5", "String7", "String9", "String8"};
+        Client c3 = new Client(pm, 20, 29);
+        String[] content3 = {"Das hier ist nicht committed", "Das auch nicht"};
+        c1.autoTransaction(content);
+        c2.autoTransaction(content2);
+        String TAID = c3.startManualTransaction(content3);
+        System.out.println("Uncommited TA: "+TAID);
+        */
     }
 
     public static Logger getLogger() {
@@ -27,14 +32,11 @@ public class Main {
         FileHandler fh;  
 
         try {  
-            // This block configure the logger with handler and formatter  
+            // This block configure the logger with handler and formatter. Add 'true' as parameter for append mode.
             fh = new FileHandler("transactions.log", true);  
             logger.addHandler(fh);
             SimpleFormatter formatter = new SimpleFormatter();  
-            fh.setFormatter(formatter);  
-
-            // the following statement is used to log any messages  
-            logger.info("--- LOG INITIALIZED ---");  
+            fh.setFormatter(formatter);
 
         } catch (SecurityException e) {  
             e.printStackTrace(); 

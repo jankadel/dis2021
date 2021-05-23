@@ -14,4 +14,11 @@ public class SynchronizedCounter {
     public synchronized int val(){
         return c;
     }
+
+    /*
+        Set LSN after crash to latest LSN from log.
+    */
+    public synchronized void setCounter(int ctr) {
+        this.c = ctr;
+    }
 }
